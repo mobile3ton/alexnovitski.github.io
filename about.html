@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About — Alex Novitski</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Ada Reyes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <header>
-    <h1>About</h1>
-  </header>
 
-  <section>
-    <p>
-      I’m an illustrator, comics creator, and 2D animator with 25+ years of professional practice.
-      My work has been exhibited internationally and supported by the Canada Council for the Arts.
-    </p>
-
-    <p>
-      I divide my time between Toronto and Poland, working across illustration, comics, animation,
-      and historical visual storytelling.
-    </p>
-
-    <h2>CV</h2>
-    <ul>
-      <li>Canada Council for the Arts — Research & Creation Grant (Graphic Novel)</li>
-      <li>International exhibitions in Canada, Poland, Germany, and Japan</li>
-      <li>Professional practice in illustration, comics, and animation</li>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-mark" href="index.html">ADA REYES<span class="dot">·</span>ILLUSTRATION</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">MENU</button>
+    <ul class="site-nav" id="site-nav">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="mailto:hello@adareyes.art">Contact</a></li>
     </ul>
+  </div>
+</header>
 
-    <p><strong>Artist name:</strong> Alex Novitski<br>
-       <strong>Legal name:</strong> Aliaksei Navitski</p>
-  </section>
+<main>
+  <div class="wrap about-layout">
+    <div class="about-portrait">
+      <img src="https://picsum.photos/id/64/700/875" alt="Portrait of Ada Reyes at her desk">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">About</p>
+      <h1>I draw the picture that makes the idea click.</h1>
+      <p>I'm an illustrator working across editorial, character, and brand illustration. Most projects start with a messy brief and a deadline — my job is to find the one image that says what the words can't.</p>
+      <p>Based in Warsaw, working with clients everywhere. Past work has run in print magazines, on packaging, and inside a couple of games nobody has heard of yet.</p>
+      <p>Open for freelance commissions and longer-term collaborations. Reach out at <a class="contact-link" href="mailto:hello@adareyes.art">hello@adareyes.art</a>.</p>
+      <ul class="skills-list">
+        <li>Editorial illustration</li>
+        <li>Character design</li>
+        <li>Procreate</li>
+        <li>Photoshop</li>
+        <li>Gouache</li>
+        <li>Brand illustration systems</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Ada Reyes</span>
+    <span><a href="mailto:hello@adareyes.art">hello@adareyes.art</a> · <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
