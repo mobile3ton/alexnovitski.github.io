@@ -1,0 +1,69 @@
+{
+  // --- WORKBENCH & APPEARANCE ---
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.autoLockGroups": {
+    "imagePreview.previewEditor": true
+  },
+
+  // --- FILE MANAGEMENT ---
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 800,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // --- EDITOR BEHAVIOR ---
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // --- HTML / CSS / JS DEVELOPMENT ---
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "html": "html",
+    "css": "css"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  "html.format.indentInnerHtml": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+
+  "css.colorDecorators": true,
+  "css.validate": true,
+
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.validate.enable": true,
+
+  // --- PRETTIER ---
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+
+  // --- LIVE SERVER ---
+  "liveServer.settings.wait": 200,
+  "liveServer.settings.CustomBrowser": "firefox",
+
+  // --- GIT & GITHUB INTEGRATION ---
+  "git.autofetch": true,
+  "git.autorefresh": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.decorations.enabled": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": true,
+
+  // --- TERMINAL ---
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  // --- SECURITY ---
+  "security.workspace.trust.untrustedFiles": "prompt"
+}
