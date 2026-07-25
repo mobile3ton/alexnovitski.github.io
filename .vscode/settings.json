@@ -50,7 +50,7 @@
 
   // --- LIVE SERVER ---
   "liveServer.settings.wait": 200,
-  "liveServer.settings.CustomBrowser": "firefox",
+  "liveServer.settings.CustomBrowser": "edge",
 
   // --- GIT & GITHUB INTEGRATION ---
   "git.autofetch": true,
