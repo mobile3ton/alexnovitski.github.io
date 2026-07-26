@@ -23,7 +23,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  margin: 0;
+  margin: 20px;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
