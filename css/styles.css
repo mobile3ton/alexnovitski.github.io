@@ -223,7 +223,7 @@ a { color: inherit; }
    ========================================================================== */
 .logo-icon {
   height: clamp(1.2em, 3vw, 1.8em);
-  margin-right: 0.4em;
+  margin: 0;
   flex-shrink: 0;
 }
 
