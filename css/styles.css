@@ -23,7 +23,9 @@
 html { scroll-behavior: smooth; }
 
 body {
-  margin: 20px;
+  /* Reset some default styles */
+  padding: 20px;
+  margin: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
