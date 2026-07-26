@@ -192,6 +192,9 @@ a { color: inherit; }
 }
 
 .category-head h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   font-family: var(--font-display);
   font-weight: 460;
   font-size: clamp(1.4rem, 2.6vw, 1.9rem);
