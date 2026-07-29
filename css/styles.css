@@ -298,14 +298,19 @@ a { color: inherit; }
   border-bottom: 1px solid var(--hairline);
 }
 
+.project-head.wrap {
+  max-width: 68ch;
+}
+
 .project-head .eyebrow { margin-bottom: 10px; }
 
 .project-head h1 {
   font-family: var(--font-display);
   font-weight: 480;
   font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.08;
   margin: 0 0 18px;
-  max-width: 20ch;
+  max-width: 15ch;
 }
 
 .project-meta-row {
@@ -326,6 +331,10 @@ a { color: inherit; }
   padding: 48px 0;
   max-width: 68ch;
   color: var(--graphite);
+}
+
+.project-body p {
+  max-width: 52ch;
 }
 
 .plates {
