@@ -298,10 +298,6 @@ a { color: inherit; }
   border-bottom: 1px solid var(--hairline);
 }
 
-.project-head.wrap {
-  max-width: 68ch;
-}
-
 .project-head .eyebrow { margin-bottom: 10px; }
 
 .project-head h1 {
