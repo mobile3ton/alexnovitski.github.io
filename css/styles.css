@@ -506,3 +506,76 @@ a { color: inherit; }
 
 /* nav active state helper */
 .site-nav a.active { color: var(--ink); border-color: var(--signal); }
+
+/* ==========================================================================
+   HOME — CATEGORY GRID  (tall portrait cards)
+   ========================================================================== */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 40px 0 64px;
+}
+
+@media (max-width: 900px) {
+  .cat-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+}
+
+.cat-card {
+  text-decoration: none;
+  color: var(--ink);
+  display: block;
+}
+
+.cat-card-frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-alt);
+  border: 1px solid var(--hairline);
+  aspect-ratio: 2 / 3;   /* portrait — taller than wide */
+}
+
+.cat-card-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* fallback when image is missing */
+.cat-card-frame img[src=""],
+.cat-card-frame img:not([src]) {
+  visibility: hidden;
+}
+
+.cat-card:hover .cat-card-frame img { transform: scale(1.04); }
+
+/* Label always visible at bottom */
+.cat-card-label {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 28px 14px 14px;
+  background: linear-gradient(to bottom, transparent, rgba(23,24,28,0.72) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cat-card-name {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 460;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.cat-card-count {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.65);
+}
