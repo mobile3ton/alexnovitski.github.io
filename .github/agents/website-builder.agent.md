@@ -1,7 +1,7 @@
 ---
 description: 'Use when: building, maintaining, or optimizing your portfolio website; editing HTML/CSS/JS; improving performance; updating gallery layouts; ensuring consistency with existing patterns'
 name: 'Website Builder'
-tools: [read, edit, search, execute]
+tools: [execute, read, browser, vscodeGeneral/rename, vscodeGeneral/usages, vscodeNotebooks/createJupyterNotebook, vscodeNotebooks/editNotebook, edit, search]
 user-invocable: true
 argument-hint: 'What do you want to build or fix on your site?'
 ---
