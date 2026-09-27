@@ -88,7 +88,10 @@
 
         <a class="card" href="/work/comics/LHO_in_Minsk.html">
         <div class="card-frame">
-          <img id="slideshow" alt="Artwork slideshow">
+          <div class="slideshow">
+  <img id="imgA" class="fade-img" alt="">
+  <img id="imgB" class="fade-img" alt="">
+</div>
           <div class="card-label"><span>Lee Harvey Oswald in Minsk</span><span>Comics</span></div>
         </div>
         <h3 class="card-title">LHO in Minsk</h3>
@@ -124,19 +127,33 @@
   ];
 
   let index = 0;
-  const img = document.getElementById("slideshow");
+  const imgA = document.getElementById("imgA");
+  const imgB = document.getElementById("imgB");
 
-  function changeImage() {
-    img.style.opacity = 0;
+  // Start with first image visible
+  imgA.src = images[index];
+  imgA.style.opacity = 1;
+
+  function crossFade() {
+    index = (index + 1) % images.length;
+
+    // Swap images: A fades out, B fades in
+    imgB.src = images[index];
+    imgB.style.opacity = 1;
+    imgA.style.opacity = 0;
+
+    // After fade completes, swap roles
     setTimeout(() => {
-      img.src = images[index];
-      index = (index + 1) % images.length;
-      img.style.opacity = 1;
-    }, 300);
+      const temp = imgA.src;
+      imgA.src = imgB.src;
+      imgB.src = temp;
+
+      imgB.style.opacity = 0;
+      imgA.style.opacity = 1;
+    }, 1500); // match CSS transition time
   }
 
-  changeImage();
-  setInterval(changeImage, 4000);
+  setInterval(crossFade, 4000); // change every 4 seconds
 </script>
 </body>
 </html>

@@ -639,7 +639,20 @@ a { color: inherit; }
    COMICS — slideshow fade effect for index page
    ========================================================================== */
 
-   #slideshow {
+ .slideshow {
+  position: relative;
+  width: 600px;   /* adjust */
+  height: 400px;  /* adjust */
+  overflow: hidden;
+}
+
+.fade-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 1.5s ease; /* smooth fade */
 }
