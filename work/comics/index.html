@@ -88,8 +88,7 @@
 
         <a class="card" href="/work/comics/LHO_in_Minsk.html">
         <div class="card-frame">
-          <img src="../../assets/comics/LHO_in_Minsk_003.webp"
-               alt="Lee Harvey Oswald in Minsk" loading="lazy">
+          <img id="slideshow" alt="Artwork slideshow">
           <div class="card-label"><span>Lee Harvey Oswald in Minsk</span><span>Comics</span></div>
         </div>
         <h3 class="card-title">LHO in Minsk</h3>
@@ -110,5 +109,37 @@
   </div>
 </footer>
 <script src="/js/main.js"></script>
+/*=
+  COMICS — slideshow fade effect for index page
+  ========================================================================== */
+<script>
+  const images = [
+    "../../assets/comics/LHO_in_Minsk_01.webp",
+    "../../assets/comics/LHO_in_Minsk_02.webp",
+    "../../assets/comics/LHO_in_Minsk_03.webp",
+    "../../assets/comics/LHO_in_Minsk_04.webp",
+    "../../assets/comics/LHO_in_Minsk_05.webp",
+    "../../assets/comics/LHO_in_Minsk_06.webp",
+    "../../assets/comics/LHO_in_Minsk_07.webp",
+    "../../assets/comics/LHO_in_Minsk_08.webp",
+    "../../assets/comics/LHO_in_Minsk_09.webp",
+    "../../assets/comics/LHO_in_Minsk_10.webp",
+  ];
+
+  let index = 0;
+  const img = document.getElementById("slideshow");
+
+  function changeImage() {
+    img.style.opacity = 0;
+    setTimeout(() => {
+      img.src = images[index];
+      index = (index + 1) % images.length;
+      img.style.opacity = 1;
+    }, 300);
+  }
+
+  changeImage();
+  setInterval(changeImage, 4000);
+</script>
 </body>
 </html>

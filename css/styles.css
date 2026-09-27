@@ -635,3 +635,11 @@ a { color: inherit; }
   letter-spacing: 0.02em;
   margin: 0;
 }
+/* ==========================================================================
+   COMICS — slideshow fade effect for index page
+   ========================================================================== */
+
+   #slideshow {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
