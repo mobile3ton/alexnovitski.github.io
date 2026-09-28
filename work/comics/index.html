@@ -88,11 +88,9 @@
 
         <a class="card" href="/work/comics/LHO_in_Minsk.html">
         <div class="card-frame">
-          <div class="slideshow">
-  <img id="imgA" class="fade-img" alt="">
-  <img id="imgB" class="fade-img" alt="">
-</div>
-          <div class="card-label"><span>Lee Harvey Oswald in Minsk</span><span>Comics</span></div>
+          <img src="../../assets/comics/LHO_in_Minsk_001.webp"
+               alt="Lee Harvey Oswald in Minsk" loading="lazy">
+          <div class="card-label"><span>Lee Harvey Oswald in Minsk</span><span>Graphic Novel</span></div>
         </div>
         <h3 class="card-title">LHO in Minsk</h3>
         <p class="card-meta">COMICS</p>
@@ -112,48 +110,5 @@
   </div>
 </footer>
 <script src="/js/main.js"></script>
-<script>
-  const images = [
-    "../../assets/comics/LHO_in_Minsk_001.webp",
-    "../../assets/comics/LHO_in_Minsk_003.webp",
-    "../../assets/comics/LHO_in_Minsk_004.webp",
-    "../../assets/comics/LHO_in_Minsk_005.webp",
-    "../../assets/comics/LHO_in_Minsk_006.webp",
-    "../../assets/comics/LHO_in_Minsk_007.webp",
-    "../../assets/comics/LHO_in_Minsk_010.webp",
-    "../../assets/comics/LHO_in_Minsk_011.webp",
-    "../../assets/comics/LHO_in_Minsk_012.webp",
-    "../../assets/comics/LHO_in_Minsk_013.webp",
-  ];
-
-  let index = 0;
-  const imgA = document.getElementById("imgA");
-  const imgB = document.getElementById("imgB");
-
-  // Start with first image visible
-  imgA.src = images[index];
-  imgA.style.opacity = 1;
-
-  function crossFade() {
-    index = (index + 1) % images.length;
-
-    // Swap images: A fades out, B fades in
-    imgB.src = images[index];
-    imgB.style.opacity = 1;
-    imgA.style.opacity = 0;
-
-    // After fade completes, swap roles
-    setTimeout(() => {
-      const temp = imgA.src;
-      imgA.src = imgB.src;
-      imgB.src = temp;
-
-      imgB.style.opacity = 0;
-      imgA.style.opacity = 1;
-    }, 1500); // match CSS transition time
-  }
-
-  setInterval(crossFade, 4000); // change every 4 seconds
-</script>
 </body>
 </html>
